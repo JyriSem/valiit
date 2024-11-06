@@ -58,6 +58,7 @@ public class Tasks {
         char firstChar = fourthInput.charAt(0);
         String replaceChar = fourthInput.replaceAll("(?i)o", "a");
         boolean startAndEnd = (fourthInput.startsWith("hello") && fourthInput.endsWith("world"));
+        String startEndIndex = fourthInput.substring(7, 12);
 
         char occurredChar = 'o';
         int firstOccurrence = fourthInput.indexOf(occurredChar);
@@ -72,6 +73,7 @@ public class Tasks {
         System.out.println(fourthInput + " first character is " + firstChar);
         System.out.println(fourthInput + " replace 'o' with 'a', result is " + replaceChar);
         System.out.println(fourthInput + " starts with 'hello' and ends with 'world', result is " + startAndEnd);
+        System.out.println(fourthInput + " start index '7', end index '12', result is " + startEndIndex);
         System.out.println(fourthInput + " char 'o' first occurrence at " + firstOccurrence + " and last occurrence at " + lastOccurrence);
         System.out.println(fourthInput + " replace 'hello' with 'bye', result is " + replacement);
     }
