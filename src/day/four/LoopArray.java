@@ -1,4 +1,4 @@
-package DayFour;
+package day.four;
 
 public class LoopArray {
     public static void main(String[] args) {

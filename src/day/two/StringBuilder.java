@@ -1,11 +1,11 @@
-package DayTwo;
+package day.two;
 
 public class StringBuilder {
     static int number = 100;
     static String name = "EMP";
 
     public static void main(String[] args) {
-        printLine();
+        printLines();
         stringBuilderAppend();
     }
 
@@ -15,7 +15,7 @@ public class StringBuilder {
         System.out.println(sb);
     }
 
-    private static void printLine() {
+    private static void printLines() {
         System.out.println(name);
         System.out.println(number);
     }

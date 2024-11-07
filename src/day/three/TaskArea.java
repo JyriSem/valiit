@@ -1,4 +1,4 @@
-package DayThree;
+package day.three;
 
 public class TaskArea {
     public static void main(String[] args) {

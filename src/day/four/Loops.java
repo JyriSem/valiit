@@ -1,10 +1,10 @@
-package DayFour;
+package day.four;
 
 public class Loops {
     public static void main(String[] args) {
         whileLoop();
-//        DoWhile();
-//        forLoop();
+        doWhileLoop();
+        forLoop();
     }
 
     public static void forLoop() {
@@ -15,17 +15,14 @@ public class Loops {
 
     public static void doWhileLoop() {
         int count = 1;
-
         do {
             System.out.println("Do Count " + count);
             count++;
-
         } while (count <= 5);
     }
 
     public static void whileLoop() {
         int count = 1;
-
         while (count <= 5) {
             System.out.println("While Before " + count);
             count++;

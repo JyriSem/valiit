@@ -1,17 +1,14 @@
-package DayFour;
+package day.four;
 
 import java.util.Arrays;
 
 public class TaskArray {
     public static void main(String[] args) {
-        int outsideArray[] = {5, 2, 3};
-        out(outsideArray);
-
         fullArray();
         specificElementArray();
         modifiedElement();
         arrayLength();
-        arrayAdd();
+        arrayAddition();
     }
 
     public static void fullArray() {
@@ -37,13 +34,9 @@ public class TaskArray {
         System.out.println(arrayLengthValue);
     }
 
-    public static void arrayAdd() {
+    public static void arrayAddition() {
         int arrayAdd[] = {4, 2, 8, 1, 6};
         int arrayAddValue = arrayAdd[0] + arrayAdd[1] + arrayAdd[2] + arrayAdd[3] + arrayAdd[4];
         System.out.println(arrayAddValue);
-    }
-
-    public static void out(int[] outsideArray) {
-        System.out.println(Arrays.toString(outsideArray));
     }
 }

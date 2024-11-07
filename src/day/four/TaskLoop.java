@@ -1,13 +1,13 @@
-package DayFour;
+package day.four;
 
 import javax.tools.ForwardingFileObject;
 
 public class TaskLoop {
     public static void main(String[] args) {
-//        forToTen();
-//        forEachArray();
-//        whilePositive();
-//        forEven();
+        forToTen();
+        forEachArray();
+        whileSumOfHundred();
+        forEvenToTwenty();
         multiplicationTableSeven();
     }
 
@@ -18,13 +18,13 @@ public class TaskLoop {
     }
 
     public static void forEachArray() {
-        String[] cars = {"Ford", "Honda", "Audi"};
-        for (String output : cars) {
+        String[] brand = {"Ford", "Honda", "Audi"};
+        for (String output : brand) {
             System.out.println(output);
         }
     }
 
-    public static void whilePositive() {
+    public static void whileSumOfHundred() {
         int i = 0;
         int sum = 0;
         while (i < 100) {
@@ -34,7 +34,7 @@ public class TaskLoop {
         System.out.println(sum);
     }
 
-    public static void forEven() {
+    public static void forEvenToTwenty() {
         for (int even = 2; even <= 20; even += 2) {
             System.out.println(even);
         }

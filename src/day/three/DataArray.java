@@ -1,4 +1,4 @@
-package DayThree;
+package day.three;
 
 import java.util.Arrays;
 
@@ -7,7 +7,8 @@ public class DataArray {
         emptyArray();
         arrayAndIndexValue();
         nullValues();
-        addAndReplaceTwoArrayIndexedValues();
+        addTwoArraysIndexedValues();
+        replaceArrayValue();
         arraySorting();
     }
 
@@ -27,12 +28,16 @@ public class DataArray {
         Boolean x = null;
     }
 
-    public static void addAndReplaceTwoArrayIndexedValues() {
-        String[] one = {"a", "b", "c"};
-        String[] two = {"d", "e", "f"};
-        System.out.println(one[0] + " + " + two[2]);
-        one[0] = "1";
-        System.out.println(Arrays.toString(one));
+    public static void addTwoArraysIndexedValues() {
+        String[] firstHalf = {"a", "b", "c"};
+        String[] secondHalf = {"d", "e", "f"};
+        System.out.println(firstHalf[0] + " + " + secondHalf[2]);
+    }
+
+    public static void replaceArrayValue() {
+        String[] replace = {"g", "h", "i"};
+        replace[0] = "G";
+        System.out.println(Arrays.toString(replace));
     }
 
     public static void arraySorting() {

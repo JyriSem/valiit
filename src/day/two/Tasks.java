@@ -1,4 +1,4 @@
-package DayTwo;
+package day.two;
 
 import java.util.Scanner;
 
@@ -6,6 +6,7 @@ public class Tasks {
     public static void main(String[] args) {
         print();
 
+        //TODO - restructurate
 
         Scanner inputInt = new Scanner(System.in);
         System.out.print("Please enter first number: ");

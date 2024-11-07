@@ -1,4 +1,4 @@
-package DayFour;
+package day.four;
 
 public class LoopBreakContinue {
     public static void main(String[] args) {
@@ -20,7 +20,7 @@ public class LoopBreakContinue {
             if (i == 3) {
                 continue;
             }
-            System.out.println("Continue Loop:" + i);
+            System.out.println("Continue (Skip) Loop:" + i);
         }
     }
 }
