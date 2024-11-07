@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Tasks {
     public static void main(String[] args) {
-//        System.out.println("Hello World");
+        print();
+
 
         Scanner inputInt = new Scanner(System.in);
         System.out.print("Please enter first number: ");
@@ -65,7 +66,7 @@ public class Tasks {
         int lastOccurrence = fourthInput.lastIndexOf(occurredChar);
 
         String regex = "(?i)hello";
-        String replacement = fourthInput.replaceAll(regex, "bye" );
+        String replacement = fourthInput.replaceAll(regex, "bye");
 
         System.out.println(fourthInput + " to uppercase, result is " + upper);
         System.out.println(fourthInput + " to lowercase, result is " + lower);
@@ -76,5 +77,9 @@ public class Tasks {
         System.out.println(fourthInput + " start index '7', end index '12', result is " + startEndIndex);
         System.out.println(fourthInput + " char 'o' first occurrence at " + firstOccurrence + " and last occurrence at " + lastOccurrence);
         System.out.println(fourthInput + " replace 'hello' with 'bye', result is " + replacement);
+    }
+
+    private static void print() {
+        System.out.println("Hello World");
     }
 }
