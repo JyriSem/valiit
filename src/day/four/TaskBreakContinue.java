@@ -4,12 +4,14 @@ import java.util.Arrays;
 
 public class TaskBreakContinue {
     public static void main(String[] args) {
-        firstEven();
-        oddToTwentySkipMultipliesOfFives();
-        multipiesOfThreeSkipMultipliesOfSix();
+        arrayFirstEven();
+        oddNumbersSkipMultipliesOfFives();
+        multipliesOfThreeSkipSix();
+        arraySumStopAtNegative();
+        arrayFindFirstGreaterThanFifty();
     }
 
-    private static void firstEven() {
+    private static void arrayFirstEven() {
         int[] numbers = {1, 3, 7, 4, 9, 10};
 
         for (int number : numbers) {
@@ -20,7 +22,7 @@ public class TaskBreakContinue {
         }
     }
 
-    private static void oddToTwentySkipMultipliesOfFives() {
+    private static void oddNumbersSkipMultipliesOfFives() {
         int five = 5;
         int twenty = 20;
         for (int i = 1; i <= twenty; i += 2) {
@@ -31,7 +33,7 @@ public class TaskBreakContinue {
         }
     }
 
-    private static void multipiesOfThreeSkipMultipliesOfSix() {
+    private static void multipliesOfThreeSkipSix() {
         int three = 3;
         int six = 6;
         int thirty = 30;
@@ -40,6 +42,29 @@ public class TaskBreakContinue {
                 continue;
             }
             System.out.println("Multiplies of " + three + " up to " + thirty + ", skip multiplies of " + six + " = " + i);
+        }
+    }
+
+    private static void arraySumStopAtNegative() {
+        int sum = 0;
+        int[] numbers = {5, 12, 3, 7, -4, 8, 2};
+        for (int number : numbers) {
+            if (number < 0) {
+                break;
+            }
+            sum += number;
+        }
+        System.out.println(sum);
+    }
+
+    private static void arrayFindFirstGreaterThanFifty() {
+        int fifty = 50;
+        int[] numbers = {23, 45, 39, 51, 48, 60};
+        for (int number : numbers) {
+            if (number > fifty) {
+                System.out.println(number);
+                break;
+            }
         }
     }
 }
